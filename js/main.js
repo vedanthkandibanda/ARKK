@@ -31,3 +31,39 @@ function scrollToSection(id) {
         behavior: "smooth"
     });
 }
+
+
+function applyJob(role) {
+    const phone = "+1(438)9944716"; // your number
+
+    const message = encodeURIComponent(
+        `Hello ARKK Tech Solutions,\n\nI am interested in the ${role} position.\nPlease share more details.`
+    );
+
+    const url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+
+    window.open(url, "_blank");
+}
+
+
+function sendMail() {
+
+    emailjs.send("service_zk0ry1v", "template_lb1hnja", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("project").value
+    })
+    .then(() => {
+        alert("Message sent successfully!");
+    })
+    .catch(() => {
+        alert("Failed to send message.");
+    });
+
+}
+
+function handle(){
+    sendMail();
+    submitForm();
+}

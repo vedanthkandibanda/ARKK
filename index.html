@@ -101,7 +101,7 @@ body {
             </p>
 
             <div class="arkk-buttons">
-                <button class="arkk-btn-primary">Get in Touch</button>
+                <button class="arkk-btn-primary" onclick="scrollToSection('contact-section')">Get in Touch</button>
             </div>
 
 
@@ -248,42 +248,42 @@ body {
                 <h3>Full Stack Developer</h3>
                 <p>Build scalable applications using modern stacks.</p>
                 <span>React • Node • APIs</span>
-                <button>Apply</button>
+                <button onclick="applyJob('Full Stack Developer')">Apply</button>
             </div>
 
             <div class="arkk-career-box">
                 <h3>UI/UX Designer</h3>
                 <p>Create intuitive product experiences.</p>
                 <span>Figma • UX • Interaction</span>
-                <button>Apply</button>
+                <button onclick="applyJob('UI/UX Designer')">Apply</button>
             </div>
 
             <div class="arkk-career-box">
                 <h3>Backend Engineer</h3>
                 <p>Design high-performance backend systems.</p>
                 <span>Node • DB • Scaling</span>
-                <button>Apply</button>
+                <button onclick="applyJob('Backend Engineer')">Apply</button>
             </div>
 
             <div class="arkk-career-box">
                 <h3>Frontend Developer</h3>
                 <p>Build fast and responsive UI systems.</p>
                 <span>React • UI • Performance</span>
-                <button>Apply</button>
+                <button onclick="applyJob('Frontend Developer')">Apply</button>
             </div>
 
             <div class="arkk-career-box wide">
                 <h3>DevOps Engineer</h3>
                 <p>Manage deployment pipelines and infrastructure.</p>
                 <span>AWS • CI/CD • Monitoring</span>
-                <button>Apply</button>
+                <button onclick="applyJob('DevOps Engineer')">Apply</button>
             </div>
 
             <div class="arkk-career-box">
                 <h3>QA Engineer</h3>
                 <p>Ensure quality through testing and automation.</p>
                 <span>Testing • Automation • QA</span>
-                <button>Apply</button>
+                <button onclick="applyJob('QA Engineer')">Apply</button>
             </div>
 
         </div>
@@ -299,18 +299,18 @@ body {
 
             <!-- STEP 1 -->
             <div id="step1" class="arkk-step">
-                <input type="text" placeholder="Full Name" id="name">
-                <input type="text" placeholder="Phone Number" id="phone">
-                <input type="email" placeholder="Email Address" id="email">
+                <input type="text" placeholder="Full Name" id="name" required>
+                <input type="text" placeholder="Phone Number" id="phone" required>
+                <input type="email" placeholder="Email Address" id="email" required>
 
                 <button onclick="nextStep()">Describe Project</button>
             </div>
 
             <!-- STEP 2 -->
             <div id="step2" class="arkk-step hidden">
-                <textarea placeholder="Describe your project..." id="project"></textarea>
+                <textarea placeholder="Describe your project..." id="project" required></textarea>
 
-                <button onclick="submitForm()">Submit</button>
+                <button onclick="handle()">Submit</button>
             </div>
 
         </div>
@@ -321,9 +321,9 @@ body {
     <footer class="arkk-footer" id="footer">
 
         <div class="arkk-footer-items">
-            <p><i class="fas fa-phone"></i> +91 90000 00000</p>
-            <p><i class="fas fa-envelope"></i> contact@arkk.tech</p>
-            <p><i class="fas fa-location-dot"></i> Hyderabad, India</p>
+            <p><i class="fas fa-phone"></i> +1(438)9944716</p>
+            <p><i class="fas fa-envelope"></i> arkktechsolutions@gmail.com</p>
+            <p><i class="fas fa-location-dot"></i> ottawa, Canada</p>
         </div>
 
         <p class="arkk-footer-copy">
@@ -333,6 +333,14 @@ body {
     </footer>
 
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("srycTP7RzVNWm9Pd-");
+})();
+</script>
 
 </body>
 
