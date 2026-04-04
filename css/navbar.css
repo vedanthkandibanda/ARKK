@@ -1,0 +1,226 @@
+/* NAVBAR BASE */
+
+.arkk-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    padding: 20px 40px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+/* LOGO */
+
+.arkk-logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #6C5CE7;
+}
+
+/* LEFT (LOGO + IMAGE) */
+
+.arkk-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* LOGO IMAGE */
+
+.arkk-logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* CENTER LINKS */
+
+.arkk-links {
+    display: flex;
+    justify-content: center;
+    /* IMPORTANT CHANGE */
+    gap: 30px;
+}
+
+/* RIGHT BUTTON */
+
+.arkk-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* BUTTON */
+
+.arkk-nav-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: var(--luxury-violet);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arkk-nav-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.5);
+}
+
+/* LINKS CONTAINER */
+
+.arkk-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* LINK STYLE */
+
+.arkk-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* ICON STYLE */
+
+.arkk-links i {
+    font-size: 13px;
+    color: var(--luxury-violet);
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+
+.arkk-links a:hover {
+    color: var(--luxury-violet);
+}
+
+/* ICON ANIMATION */
+
+.arkk-links a:hover i {
+    transform: translateY(-2px);
+}
+
+/* UNDERLINE ANIMATION */
+
+.arkk-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0%;
+    background: var(--luxury-violet);
+    transition: 0.3s;
+}
+
+.arkk-links a:hover::after {
+    width: 100%;
+}
+
+/* MOBILE ICON */
+
+.arkk-menu-icon {
+    display: none;
+    font-size: 22px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* DROPDOWN PANEL */
+
+.arkk-dropdown {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(10, 10, 15, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    display: none;
+    flex-direction: column;
+    padding: 12px;
+    min-width: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    animation: dropdownFade 0.3s ease;
+}
+
+/* ITEMS */
+
+.arkk-dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* ICON STYLE */
+
+.arkk-dropdown i {
+    color: var(--luxury-violet);
+    font-size: 14px;
+}
+
+/* HOVER EFFECT */
+
+.arkk-dropdown a:hover {
+    background: rgba(108, 92, 231, 0.15);
+    transform: translateX(5px);
+}
+
+/* ANIMATION */
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    .arkk-navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .arkk-links {
+        display: none;
+    }
+
+    .arkk-right {
+        display: none;
+        /* hide button on mobile */
+    }
+
+    .arkk-menu-icon {
+        display: block;
+        justify-self: end;
+    }
+}

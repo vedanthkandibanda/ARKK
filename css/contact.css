@@ -1,0 +1,83 @@
+/* CONTACT */
+
+.arkk-contact-final {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* TITLE */
+
+.arkk-contact-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* CONTAINER */
+
+.arkk-contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+}
+
+/* INPUTS */
+
+.arkk-contact-container input,
+.arkk-contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* FOCUS */
+
+.arkk-contact-container input:focus,
+.arkk-contact-container textarea:focus {
+    border: 1px solid var(--luxury-violet);
+}
+
+/* TEXTAREA */
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* BUTTON */
+
+.arkk-contact-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--luxury-violet);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+.arkk-contact-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.5);
+}
+
+/* HIDDEN STEP */
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,104 @@
+/* services SECTION */
+
+.arkk-services {
+    padding: 80px 40px;
+    background: #0A0A0F;
+    text-align: center;
+}
+
+/* HEADER */
+
+.arkk-section-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--luxury-violet);
+    margin-bottom: 10px;
+}
+
+.arkk-section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* GRID */
+
+.arkk-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+
+.arkk-service-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+/* BIG ICON */
+
+.arkk-service-card i {
+    font-size: 40px;
+    color: var(--luxury-violet);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+/* TITLE */
+
+.arkk-service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+
+.arkk-service-card p {
+    font-size: 14px;
+    color: #B0B0C3;
+    line-height: 1.6;
+}
+
+/* EXTRA LINE */
+
+.arkk-service-card span {
+    display: block;
+    font-size: 12px;
+    color: var(--luxury-violet);
+    margin-top: 12px;
+}
+
+/* HOVER EFFECT */
+
+.arkk-service-card:hover {
+    transform: translateY(-6px);
+    border: 1px solid rgba(108, 92, 231, 0.4);
+    box-shadow: 0 12px 30px rgba(108, 92, 231, 0.2);
+}
+
+/* ICON HOVER */
+
+.arkk-service-card:hover i {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px rgba(108, 92, 231, 0.6);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+    .arkk-section-title {
+        font-size: 24px;
+    }
+}
+
+@media(min-width:1200px) {
+    .arkk-section-title {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,177 @@
+/*Career SECTION */
+
+.arkk-careers {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* TITLE */
+
+.arkk-careers-title {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.arkk-careers-sub {
+    color: #B0B0C3;
+    margin: 15px auto 40px;
+    max-width: 600px;
+}
+
+/* JOB LIST */
+
+.arkk-job-list {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* JOB CARD */
+
+.arkk-job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+/* TEXT */
+
+.arkk-job-left h3 {
+    font-size: 18px;
+}
+
+.arkk-job-left p {
+    font-size: 13px;
+    color: #B0B0C3;
+}
+
+/* BUTTON */
+
+.arkk-apply-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid var(--luxury-violet);
+    color: var(--luxury-violet);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+.arkk-job-card:hover {
+    transform: translateY(-3px);
+    border: 1px solid rgba(108, 92, 231, 0.4);
+    box-shadow: 0 10px 25px rgba(108, 92, 231, 0.15);
+}
+
+.arkk-apply-btn:hover {
+    background: var(--luxury-violet);
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+    .arkk-job-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+/* GRID */
+
+.arkk-career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* BOX */
+
+.arkk-career-box {
+    padding: 25px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* VARIANTS */
+
+.arkk-career-box.large {
+    grid-column: span 2;
+}
+
+.arkk-career-box.wide {
+    grid-column: span 2;
+}
+
+/* TEXT */
+
+.arkk-career-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.arkk-career-box p {
+    font-size: 14px;
+    color: #B0B0C3;
+}
+
+.arkk-career-box span {
+    display: block;
+    margin: 10px 0;
+    font-size: 12px;
+    color: var(--luxury-violet);
+}
+
+/* BUTTON */
+
+.arkk-career-box button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background: var(--luxury-violet);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+
+.arkk-career-box:hover {
+    transform: translateY(-6px);
+    border: 1px solid rgba(108, 92, 231, 0.4);
+    box-shadow: 0 15px 40px rgba(108, 92, 231, 0.2);
+}
+
+.arkk-career-box button:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+    .arkk-career-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .arkk-career-box.large,
+    .arkk-career-box.wide {
+        grid-column: span 1;
+    }
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/careers.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0F;
+    color: white;
+}
+
+:root {
+    --bg-black: #0A0A0F;
+    --luxury-violet: #6C5CE7;
+    --white: #FFFFFF;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="arkk-navbar">
+
+        <!-- LEFT (LOGO + TEXT) -->
+        <div class="arkk-left">
+            <!--<img src="https://i.postimg.cc/hjZydsp1/Geometric-purple-A-logo-design-removebg-preview.png" class="arkk-logo-img"> -->
+            <div class="arkk-logo">ARKK</div>
+        </div>
+
+        <!-- CENTER LINKS -->
+        <div class="arkk-links">
+            <a href="#services"><i class="fas fa-layer-group"></i> Services</a>
+            <a href="#about"><i class="fas fa-user-astronaut"></i> About</a>
+            <a href="#careers"><i class="fas fa-briefcase"></i> Careers</a>
+            <a href="#footer"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+
+        <!-- RIGHT BUTTON -->
+        <div class="arkk-right">
+            <button onclick="scrollToSection('contact-section')" class="arkk-nav-btn">
+                Get in Touch
+            </button>
+        </div>
+
+        <!-- MOBILE ICON -->
+        <div class="arkk-menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- MOBILE DROPDOWN -->
+        <div id="arkk-dropdown" class="arkk-dropdown">
+            <a href="#services"><i class="fas fa-layer-group"></i> Services</a>
+            <a href="#about"><i class="fas fa-user-astronaut"></i> About</a>
+            <a href="#careers"><i class="fas fa-briefcase"></i> Careers</a>
+            <a href="#footer"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="arkk-hero">
+
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="arkk-video">
+            <source src="your-video.mp4" type="video/mp4">
+        </video>
+
+        <!-- Overlay -->
+        <div class="arkk-overlay"></div>
+
+        <div class="arkk-hero-content">
+
+            <p class="arkk-tagline">ARKK TECH SOLUTIONS</p>
+
+            <h1 class="arkk-title">
+                Systems that <span>scale</span> with your business
+            </h1>
+
+            <p class="arkk-subtext">
+                We design and build reliable technology solutions that simplify operations and support long-term growth.
+            </p>
+
+            <div class="arkk-buttons">
+                <button class="arkk-btn-primary">Get in Touch</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- services SECTION -->
+    <section class="arkk-services" id="services">
+
+        <div class="arkk-services-header">
+            <p class="arkk-section-tag">WHAT WE DO</p>
+            <h2 class="arkk-section-title">Engineered solutions for modern businesses</h2>
+        </div>
+
+        <div class="arkk-services-grid">
+
+            <div class="arkk-service-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Business Systems</h3>
+                <p>Structured systems that streamline operations and improve efficiency.</p>
+                <span>Process Automation • Workflow Design • Scalability</span>
+            </div>
+
+            <div class="arkk-service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Applications</h3>
+                <p>Scalable web platforms built for performance and reliability.</p>
+                <span>Custom Apps • High Performance • Secure Architecture</span>
+            </div>
+
+            <div class="arkk-service-card">
+                <i class="fas fa-cart-shopping"></i>
+                <h3>E-commerce Solutions</h3>
+                <p>Modern online stores designed to convert and scale.</p>
+                <span>Conversion Focus • Payment Integration • Growth Ready</span>
+            </div>
+
+            <div class="arkk-service-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Technology Consulting</h3>
+                <p>Strategic guidance to help you make the right technical decisions.</p>
+                <span>Architecture • Planning • Optimization</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why SECTION -->
+    <section class="arkk-about" id="about">
+
+        <p class="arkk-section-tag">ABOUT</p>
+
+        <h2 class="arkk-about-title">
+            We build systems that help businesses operate better.
+        </h2>
+
+        <p class="arkk-about-desc">
+            ARKK Tech Solutions focuses on scalable, reliable systems that simplify operations and drive growth.
+        </p>
+
+        <!-- PROFESSIONAL AUTO FLOW SLIDER -->
+        <div class="arkk-slider">
+            <div class="arkk-slider-track">
+
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+
+                <!-- duplicate -->
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+
+            </div>
+        </div>
+
+        <button class="arkk-about-btn" onclick="toggleWhy()">Why Us?</button>
+
+        <!-- EXPAND -->
+        <div id="arkk-why-expand" class="arkk-why-expand">
+
+            <!-- BLOCK 1 -->
+            <div class="arkk-row">
+                <div class="arkk-content violet">
+                    <h3>Scalable Systems</h3>
+                    <h5>Built for growth</h5>
+                    <p>Our systems are designed to handle increasing demand without performance issues.</p>
+                </div>
+
+                <div class="arkk-img-box">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+                </div>
+            </div>
+
+            <!-- BLOCK 2 -->
+            <div class="arkk-row reverse">
+                <div class="arkk-content cyan">
+                    <h3>Secure Architecture</h3>
+                    <h5>Protection first</h5>
+                    <p>We implement strong security practices to ensure system stability and safety.</p>
+                </div>
+
+                <div class="arkk-img-box">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+                </div>
+            </div>
+
+            <!-- BLOCK 3 -->
+            <div class="arkk-row">
+                <div class="arkk-content white">
+                    <h3>High Performance</h3>
+                    <h5>Optimized execution</h5>
+                    <p>Fast, efficient systems that deliver consistent performance in real-world use.</p>
+                </div>
+
+                <div class="arkk-img-box">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="arkk-careers" id="careers">
+
+        <p class="arkk-section-tag">CAREERS</p>
+
+        <h2 class="arkk-careers-title">
+            Work on systems that actually matter
+        </h2>
+
+        <p class="arkk-careers-sub">
+            Join a team focused on building scalable, real-world technology solutions.
+        </p>
+
+        <div class="arkk-career-grid">
+
+            <div class="arkk-career-box large">
+                <h3>Full Stack Developer</h3>
+                <p>Build scalable applications using modern stacks.</p>
+                <span>React • Node • APIs</span>
+                <button>Apply</button>
+            </div>
+
+            <div class="arkk-career-box">
+                <h3>UI/UX Designer</h3>
+                <p>Create intuitive product experiences.</p>
+                <span>Figma • UX • Interaction</span>
+                <button>Apply</button>
+            </div>
+
+            <div class="arkk-career-box">
+                <h3>Backend Engineer</h3>
+                <p>Design high-performance backend systems.</p>
+                <span>Node • DB • Scaling</span>
+                <button>Apply</button>
+            </div>
+
+            <div class="arkk-career-box">
+                <h3>Frontend Developer</h3>
+                <p>Build fast and responsive UI systems.</p>
+                <span>React • UI • Performance</span>
+                <button>Apply</button>
+            </div>
+
+            <div class="arkk-career-box wide">
+                <h3>DevOps Engineer</h3>
+                <p>Manage deployment pipelines and infrastructure.</p>
+                <span>AWS • CI/CD • Monitoring</span>
+                <button>Apply</button>
+            </div>
+
+            <div class="arkk-career-box">
+                <h3>QA Engineer</h3>
+                <p>Ensure quality through testing and automation.</p>
+                <span>Testing • Automation • QA</span>
+                <button>Apply</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="arkk-contact-final" id="contact-section">
+
+        <h2 class="arkk-contact-heading">Get In Touch</h2>
+
+        <div class="arkk-contact-container">
+
+            <!-- STEP 1 -->
+            <div id="step1" class="arkk-step">
+                <input type="text" placeholder="Full Name" id="name">
+                <input type="text" placeholder="Phone Number" id="phone">
+                <input type="email" placeholder="Email Address" id="email">
+
+                <button onclick="nextStep()">Describe Project</button>
+            </div>
+
+            <!-- STEP 2 -->
+            <div id="step2" class="arkk-step hidden">
+                <textarea placeholder="Describe your project..." id="project"></textarea>
+
+                <button onclick="submitForm()">Submit</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="arkk-footer" id="footer">
+
+        <div class="arkk-footer-items">
+            <p><i class="fas fa-phone"></i> +91 90000 00000</p>
+            <p><i class="fas fa-envelope"></i> contact@arkk.tech</p>
+            <p><i class="fas fa-location-dot"></i> Hyderabad, India</p>
+        </div>
+
+        <p class="arkk-footer-copy">
+            © 2026 ARKK Tech Solutions
+        </p>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
